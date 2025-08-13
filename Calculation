@@ -1,0 +1,13 @@
+#this is made for calculated efficiency worker wise
+
+
+class efficienc_calculation:
+    def __init__(self,smv,quantity,working_minutes):
+        self.smv=smv
+        self.quantity=quantity
+        self.working_minutes=working_minutes
+    def efficiency(self):
+        return f"Efficiency: {self.smv*self.quantity/self.working_minutes}"
+Opertor1=efficienc_calculation(0.6,450,570)
+print(Opertor1.efficiency())
+        
